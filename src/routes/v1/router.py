@@ -7,9 +7,6 @@ from src.controllers.api.v1 import laptop_controllers
 from src.controllers.api.v1 import mobile_controllers
 from src.controllers.api.v1 import student_info
 from src.controllers.api.v1 import teachers_info
-from src.controllers.api.v1 import crud
-from src.controllers.api.v1.app import orm_main
-
 
 
 router = APIRouter()
@@ -23,7 +20,6 @@ router.include_router(laptop_controllers.router, prefix="/laptop")
 router.include_router(mobile_controllers.router, prefix="/mobile")
 router.include_router(student_info.router, prefix="/student")
 router.include_router(teachers_info.router, prefix="/teacher")
-router.include_router(crud.router, prefix="/crud")
-router.include_router(orm_main.router, prefix="/orm")
+
 
 
