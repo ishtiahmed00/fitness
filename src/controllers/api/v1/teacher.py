@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from src.schemas.v1.teacherSchema import TeacherSchema 
+from src.schemas.v1.teacher_schema import TeacherSchema 
 
 router = APIRouter()
 
