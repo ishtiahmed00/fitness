@@ -26,7 +26,6 @@ def create_customer(data : Customer_info_check):
     return{"data" : returning_data}
 
 
-
 #Read
 @router.get("/")
 def read():
@@ -58,7 +57,6 @@ def read_by_id(id : int):
     return{"data" : data}
 
 
-
 #Update
 @router.put("/")
 def create(data : Customer_info_check):
@@ -81,7 +79,6 @@ def create(data : Customer_info_check):
     connection.commit()
     updated_data = cursor.fetchone()
     return{"data" : updated_data}
-
 
 
 #Delete
